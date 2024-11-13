@@ -20,4 +20,15 @@ total_with_tip = bill_amount + tip_total
 print(f'The tip amount is: ${tip_total:.2f}')
 print(f'The total for the whole bill is: ${total_with_tip:.2f}')
 
-# split_bill = print(input('how many people are splitting the bill?'))
+# find out how many people are splittng the bill
+ppl_split = int(input('How many people are splitting the bill?'))
+
+# this is the total per person
+
+total_person = total_with_tip / ppl_split
+
+# calc the total per person
+
+bill_split = print(f'The total is: ${total_person:.2f} ')
+
+
